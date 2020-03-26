@@ -10,6 +10,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   color: #333333;
+  position: relative;
 }
 
 a {
@@ -35,8 +36,7 @@ h2 {
 }
 
 .main-header,
-.main-content,
-.main-footer {
+.main-content {
   background-color: #FFFFFF;
 }
 
@@ -216,4 +216,43 @@ h2 {
 
 .find-hotel img {
   width: 100%;
+  vertical-align: bottom;
+}
+
+.main-footer {
+  margin-top: -120px;
+  position: absolute;
+  background-color: rgb(255, 255, 255, 0.8);
+  width: 100%;
+  
+}
+
+.main-footer__list {
+  height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+}
+
+.main-footer__list li:nth-child(1) {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.main-footer__socials {
+  display: flex;
+}
+
+.main-footer__socials li {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.main-footer__socials p {
+  text-align: center;
+}
+
+.html-logo {
+  margin-left: 6px;
 }
