@@ -1,0 +1,219 @@
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+  margin-right: 40px;
+  margin-left: 40px;
+  padding: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+h2 {
+  font-size: 21px;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.main-header,
+.main-content,
+.main-footer {
+  background-color: #FFFFFF;
+}
+
+.navigation {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation a {
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.navigation a:hover,
+.navigation a:focus {
+  color: #81b3d2;
+}
+
+.navigation a:active {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.sedona-logo img {
+  position: absolute;
+  width: 138px;
+  left: 50%;
+  margin-left: -69px;
+}
+
+.main-content .welcome {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.main-content .foreword {
+  text-align: center;
+  width: 500px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
+}
+
+.main-content .foreword h2 {
+  font-size: 21px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages__list .wrapper {
+  height: 256px;
+  background-color: #eeeeee;
+  color: #333333;
+  text-align: center;
+}
+
+.advantages__list .wrapper h2 {
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.advantages__list .wrapper p {
+  margin-bottom: 30px;
+}
+
+.advantages__list .wrapper.blue{
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.advantages__list .wrapper.blue h2 {
+  color: #ffffff;
+}
+
+.advantages__list .wrapper.white {
+  background-color: #ffffff;
+}
+
+.advantages__list .cause {
+  width: 33.33%;
+  display: inline-block;
+}
+
+.advantages__list .inner {
+  height: 156px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.advantages__list .inner.small {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.advantages__list .inner.big {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.advantages__list .wrapper img {
+  width: 66.66%;
+  height: 256px;
+}
+
+.advantages__list .inner img {
+  width: auto;
+  height: auto;
+}
+
+.advantages__list li:nth-child(1),
+.advantages__list li:nth-child(2) {
+  width: 100%;
+}
+
+.advantages__list li:nth-child(3),
+.advantages__list li:nth-child(4), 
+.advantages__list li:nth-child(5) {
+  width: 33.33%;
+}
+
+.advantages__list-pros {
+  display: flex;
+}
+
+/* Из-за того, что иконка сувениров выше на 6px. */
+.advantages__list-pros li:nth-child(1), 
+.advantages__list-pros li:nth-child(2) {
+  margin-top: 6px;
+}
+
+.advantages__list-pros li:nth-child(1), 
+.advantages__list-pros li:nth-child(2), 
+.advantages__list-pros li:nth-child(3) {
+  width: 33.33%;
+}
+
+.find-hotel {
+  text-align: center;
+}
+
+.find-hotel h2 {
+  margin-top: 60px;
+  font-size: 30px;
+}
+
+.find-hotel p {
+  margin-bottom: 50px;
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.find-hotel__button {
+  font-size: 21px;
+  color: #ffffff;
+  background-color: #766357;
+  border: 0;
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.find-hotel img {
+  width: 100%;
+}
