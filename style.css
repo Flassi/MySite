@@ -41,11 +41,6 @@ body {
   background-image: url("img/icon-email.svg");
 }
 
-.header-phone {
-  padding-left: 25px;
-  background-image: url("img/icon-phone.svg");
-}
-
 .hero-image {
   margin-bottom: 480px;
 }
@@ -95,6 +90,10 @@ body {
   margin: 0 0 32px;
 }
 
+.few-words-yourself p {
+  text-indent: 40px;
+}
+
 .skills-list {
   margin: 0;
   padding: 0;
@@ -112,6 +111,10 @@ body {
 
 .skill-css {
   background-image: url("img/icon-css.svg");
+}
+
+.skill-js {
+  background-image: url(img/icon-javascript.svg);
 }
 
 .level {
@@ -132,26 +135,40 @@ body {
 }
 
 .portfolio {
-  margin: 0 0 120px;
+  margin-bottom: 120px;
 }
 
-.projects {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.projects li {
-  margin: 0 0 80px;
-}
-
-.project-image {
-  margin: 0 0 24px;
+.portfolio-item__name {
+  font-size: 32px;
+  font-weight: 700;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.projects p {
-  margin: 0 0 24px;
+.portfolio-item__screens {
+  width: 100%;
+  font-size: 0px;
+  padding: 5px;
+  border: 2px solid #fea18d;
+  border-radius: 20px;
+}
+
+.portfolio-item__screens img {
+  width: 50%;
+  padding: 5px;
+  vertical-align: top;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.portfolio-item__description {
+  font-size: 20px;
+  text-indent: 40px;
+}
+
+.portfolio-warning {
+  opacity: 0.2;
+  margin-top: 70px;
 }
 
 .button {
@@ -181,9 +198,4 @@ body {
 .footer-email {
   padding-left: 30px;
   background-image: url("img/icon-email.svg");
-}
-
-.footer-phone {
-  padding-left: 25px;
-  background-image: url("img/icon-phone.svg");
 }
