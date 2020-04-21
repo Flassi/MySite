@@ -27,6 +27,13 @@ h2 {
   font-size: 21px;
 }
 
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -36,7 +43,8 @@ h2 {
 }
 
 .main-header,
-.main-content {
+.main-content,
+.main-footer {
   background-color: #FFFFFF;
 }
 
@@ -57,14 +65,17 @@ h2 {
   display: inline-block;
 }
 
+.navigation a.active {
+  color: #766357;
+}
+
 .navigation a:hover,
 .navigation a:focus {
   color: #81b3d2;
 }
 
 .navigation a:active {
-  color: #000000;
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .sedona-logo img {
@@ -74,185 +85,87 @@ h2 {
   margin-left: -69px;
 }
 
-.main-content .welcome {
-  width: 100%;
-  margin-bottom: 40px;
-}
-
-.main-content .foreword {
-  text-align: center;
-  width: 500px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 60px;
-}
-
-.main-content .foreword h2 {
-  font-size: 21px;
-  font-weight: 700;
-  margin-bottom: 40px;
-}
-
-.advantages__list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.advantages__list .wrapper {
-  height: 256px;
-  background-color: #eeeeee;
-  color: #333333;
-  text-align: center;
-}
-
-.advantages__list .wrapper h2 {
-  margin-bottom: 30px;
-  color: #000000;
-}
-
-.advantages__list .wrapper p {
-  margin-bottom: 30px;
-}
-
-.advantages__list .wrapper.blue{
-  background-color: #81b3d2;
-  color: #ffffff;
-}
-
-.advantages__list .wrapper.blue h2 {
-  color: #ffffff;
-}
-
-.advantages__list .wrapper.white {
-  background-color: #ffffff;
-}
-
-.advantages__list .cause {
-  width: 33.33%;
-  display: inline-block;
-}
-
-.advantages__list .inner {
-  height: 156px;
-  padding-top: 30px;
-  padding-bottom: 60px;
-}
-
-.advantages__list .inner.small {
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
-.advantages__list .inner.big {
-  padding-left: 90px;
-  padding-right: 90px;
-}
-
-.advantages__list .wrapper img {
-  width: 66.66%;
-  height: 256px;
-}
-
-.advantages__list .inner img {
-  width: auto;
-  height: auto;
-}
-
-.advantages__list li:nth-child(1),
-.advantages__list li:nth-child(2) {
-  width: 100%;
-}
-
-.advantages__list li:nth-child(3),
-.advantages__list li:nth-child(4), 
-.advantages__list li:nth-child(5) {
-  width: 33.33%;
-}
-
-.advantages__list-pros {
-  display: flex;
-}
-
-/* Из-за того, что иконка сувениров выше на 6px. */
-.advantages__list-pros li:nth-child(1), 
-.advantages__list-pros li:nth-child(2) {
-  margin-top: 6px;
-}
-
-.advantages__list-pros li:nth-child(1), 
-.advantages__list-pros li:nth-child(2), 
-.advantages__list-pros li:nth-child(3) {
-  width: 33.33%;
-}
-
-.find-hotel {
-  text-align: center;
-}
-
-.find-hotel h2 {
-  margin-top: 60px;
-  font-size: 30px;
-}
-
-.find-hotel p {
-  margin-bottom: 50px;
-  width: 450px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.find-hotel__button {
-  font-size: 21px;
-  color: #ffffff;
-  background-color: #766357;
-  border: 0;
-  padding-left: 140px;
-  padding-right: 140px;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.find-hotel img {
-  width: 100%;
-  vertical-align: bottom;
-}
-
 .main-footer {
-  margin-top: -120px;
-  position: absolute;
-  background-color: rgb(255, 255, 255, 0.8);
+  background-color: #ffffff;;
   width: 100%;
-  
 }
 
 .main-footer__list {
   height: 120px;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 0;
 }
 
-.main-footer__list li:nth-child(1) {
+.main-footer__list > li {
+  width: 33.33%;
+  text-align: center;
+  font-size: 0;
+}
+
+.main-footer__list > li {
+  text-align: center;
+  font-size: 14px;
+}
+
+.main-footer__list > li:nth-child(1) {
   font-size: 21px;
   font-weight: 700;
 }
 
 .main-footer__socials {
   display: flex;
+  justify-content: center;
 }
 
-.main-footer__socials li {
-  margin-left: 3px;
-  margin-right: 3px;
+.main-footer__socials > li > a {
+  display: block;
+  position: relative;
+  background-color: #81b3d2;
+  width: 46px;
+  height: 48px;
+  margin: 3px;
 }
 
-.main-footer__socials p {
-  text-align: center;
+.main-footer__socials > li > a > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-footer__socials > li > a:hover,
+.main-footer__socials > li > a:focus {
+  background-color: #669ec0;
+}
+
+.main-footer__socials > li > a:active {
+  background-color: #5496bd;
+}
+
+.main-footer__socials > li > a:active > svg {
+  opacity: 0.3;
 }
 
 .html-logo {
+  vertical-align: middle;
   margin-left: 6px;
+}
+
+.html-logo > svg {
+  display: inline-block;
+  width: 115px;
+  height: 45px;
+  fill: #231f20;
+}
+
+.html-logo > svg:hover,
+.html-logo > svg:focus {
+  fill: #5496bd;
+}
+
+.html-logo > svg:active {
+  fill: #bdbbbc;
 }
