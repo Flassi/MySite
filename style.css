@@ -149,6 +149,11 @@ body {
   margin-bottom: 20px;
 }
 
+.portfolio-item__tags {
+  text-align: start;
+  opacity: 0.5;
+}
+
 .portfolio-item__screens {
   width: 100%;
   font-size: 0px;
