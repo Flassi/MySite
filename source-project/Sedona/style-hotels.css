@@ -176,6 +176,7 @@
 }
 
 .sorting-left {
+  display: -ms-flexbox;
   display: flex;
 }
 
