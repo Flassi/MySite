@@ -15,7 +15,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  
+  background-color: #ffffff;
   position: relative;
   min-width: 1200px;
   max-width: 1200px;
@@ -59,6 +59,7 @@ button {
 .navigation {
   list-style: none;
   padding: 0;
+  font-size: 0px;
   display: flex;
   justify-content: space-between;
 }
