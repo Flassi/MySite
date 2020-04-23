@@ -1,0 +1,15 @@
+body {
+  font-family: 'PT Sans Narrow', sans-serif;
+  min-width: 940px;
+  max-width: 940px;
+  width: 940px;
+  margin: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.main-container {
+  background-image: url(img/index/background.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
