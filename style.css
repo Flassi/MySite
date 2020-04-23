@@ -36,7 +36,7 @@ body {
   background-position: left;
 }
 
-.header-email {
+.email {
   padding-left: 30px;
   background-image: url("img/icon-email.svg");
 }
@@ -90,31 +90,8 @@ body {
   margin: 0 0 32px;
 }
 
-.few-words-yourself p {
+.intro-item p {
   text-indent: 40px;
-}
-
-.skills-list {
-  margin: 0;
-  padding: 0;
-}
-
-.skills-list dt {
-  padding-left: 32px;
-  background-repeat: no-repeat;
-  background-position: left;
-}
-
-.skill-html {
-  background-image: url("img/icon-html.svg");
-}
-
-.skill-css {
-  background-image: url("img/icon-css.svg");
-}
-
-.skill-js {
-  background-image: url(img/icon-javascript.svg);
 }
 
 .level {
@@ -217,9 +194,4 @@ body {
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: left;
-}
-
-.footer-email {
-  padding-left: 30px;
-  background-image: url("img/icon-email.svg");
 }
