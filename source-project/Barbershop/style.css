@@ -1,10 +1,5 @@
 body {
   font-family: 'PT Sans Narrow', sans-serif;
-  background-image: url(img/index/main-background.jpg);
-  background-color: #000000;
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
   margin: 0;
   font-size: 16px;
   font-weight: 700;
@@ -149,13 +144,8 @@ a {
 }
 
 .section-wrapper {
-  padding-left: 80px;
-  padding-right: 80px;
-  padding-top: 50px;
-  padding-bottom: 50px;
   background-image: url(img/block-background.jpg);
   color: #000000;
-  display: flex;
 }
 
 .section-wrapper h3 {
@@ -166,4 +156,16 @@ a {
   font-size: 14px;
   line-height: 24px;
   margin: 0;
+}
+
+.section-wrapper.fixed {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.section-wrapper.rubber {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }

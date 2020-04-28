@@ -1,3 +1,11 @@
+.body-index {
+  background-image: url(img/index/main-background.jpg);
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
 .main-logo {
   width: 370px;
 }
@@ -46,6 +54,10 @@
   margin-bottom: 36px;
 }
 
+.news-and-photogallery .section-wrapper {
+  display: flex;
+}
+
 .news {
   width: 50%;
 }
@@ -91,6 +103,10 @@
 
 .contacts-and-signup {
   margin-bottom: 65px;
+}
+
+.contacts-and-signup .section-wrapper {
+  display: flex;
 }
 
 .contacts {
