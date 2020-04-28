@@ -1,0 +1,162 @@
+.main-logo {
+  width: 370px;
+}
+
+.advantages {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.advantages-container {
+  margin-top: 75px;
+  margin-bottom: 85px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.advantages-item {
+  width: 300px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.advantages-item h3 {
+  position: relative;
+  margin: 0;
+  margin-bottom: 75px;
+}
+
+.advantages-item h3::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #f7f4f1;
+  left: 50%;
+  top: 55px;
+  transform: translateX(-50%) rotate(-45deg);
+}
+
+.advantages-item p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.news-and-photogallery {
+  margin-bottom: 36px;
+}
+
+.news {
+  width: 50%;
+}
+
+/*
+.news-container {
+  overflow-y: scroll;
+  height: 218px;
+}
+*/
+
+.news-item {
+  margin-bottom: 25px;
+}
+
+.news-item__text,
+.news-item__date {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.news-item__date {
+  text-transform: lowercase;
+}
+
+.photogallery {
+  width: 50%;
+  padding-left: 90px;
+  box-shadow: -47px 0px 10px -50px;
+  box-sizing: border-box;
+}
+
+.photogallery__photo {
+  border: 7px solid #ffffff;
+  display: block;
+  margin-bottom: 38px;
+}
+
+.main-button.forward {
+  margin-left: 20px;
+}
+
+.contacts-and-signup {
+  margin-bottom: 65px;
+}
+
+.contacts {
+  width: 50%;
+}
+
+.contacts__address {
+  margin-bottom: 25px;
+}
+
+.contacts__working-time {
+  margin-bottom: 25px;
+}
+
+.contacts > .main-button + .main-button {
+  margin-left: 20px;
+}
+
+.signup {
+  width: 50%;
+  padding-left: 90px;
+  box-shadow: -47px 0px 10px -50px;
+  box-sizing: border-box;
+}
+
+.signup__form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  margin-top: 10px;
+}
+
+.signup__form label {
+  width: 140px;
+  text-indent: 17px;
+  margin-top: 10px;
+}
+
+.signup__form label:nth-child(2n) {
+  margin-left: 20px;
+}
+
+.signup__form input {
+  width: 140px;
+  height: 42px;
+  font: inherit;
+  font-size: 14px;
+  text-indent: 17px;
+  padding: 0;
+  margin-top: 12px;
+  background-color: #f9f6f3;
+  border: 2px solid #000101;
+  box-sizing: border-box;
+}
+
+.signup__form button {
+  display: block;
+  width: 100%;
+  font: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #000000;
+  cursor: pointer;
+  border: none;
+  margin-top: 20px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
