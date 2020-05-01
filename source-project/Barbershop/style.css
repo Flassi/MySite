@@ -29,6 +29,12 @@ a {
   margin: -1px;
 }
 
+.main-content {
+  position: relative;
+  box-shadow: 0px 20px 20px #000000;
+  min-width: 940px;
+}
+
 .main-container {
   min-width: 940px;
   max-width: 940px;
@@ -80,6 +86,7 @@ a {
   padding-top: 60px;
   padding-bottom: 40px;
   background-image: url(img/main-footer-background.jpg);
+  min-width: 940px;
 }
 
 .main-footer .wrapper {
@@ -145,6 +152,7 @@ a {
 
 .section-wrapper {
   background-image: url(img/block-background.jpg);
+  background-color: #f2efec;
   color: #000000;
 }
 
@@ -168,4 +176,44 @@ a {
 .section-wrapper.rubber {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.shop-navigation > ul {
+  list-style: none;
+  display: flex;
+  font-size: 14px;
+}
+
+.shop-navigation > ul > li:nth-child(n+2) {
+  position: relative;
+  margin-left: 40px;
+}
+
+.shop-navigation > ul > li:nth-child(n+2)::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  transform: rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+}
+
+.rhombus-list > li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.rhombus-list > li::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0px;
+  transform: rotate(45deg);
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
 }

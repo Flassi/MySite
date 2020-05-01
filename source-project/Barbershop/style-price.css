@@ -1,0 +1,110 @@
+.price-list__heading {
+  position: relative;
+  margin: 0;
+  padding-top: 45px;
+  text-align: center;
+  font-size: 48px;
+}
+
+.price-list__heading::before {
+  content: "";
+  position: absolute;
+  left: 0%;
+  top: 75px;
+  width: 160px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.price-list__heading::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  transform: translateX(-100%);
+  top: 75px;
+  width: 160px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.price-list__container {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.price-list__container > div {
+  margin-top: 65px;
+  box-sizing: border-box;
+}
+
+.price-list__container h3 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+
+.price-list__resources,
+.price-list__secvice-price {
+  width: 50%;
+}
+
+.price-list__about-us {
+  width: 100%;
+}
+
+.price-list__resources .rhombus-list {
+  margin: 0;
+}
+
+.price-list__resources .rhombus-list > li {
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+
+.price-list__resources .rhombus-list > li:nth-child(1) {
+  padding-top: 0px;
+}
+
+.price-list__resources .rhombus-list > li:nth-last-child(1) {
+  padding-bottom: 0px;
+}
+
+.price-list__resources .rhombus-list > li:nth-child(n+2)::before {
+  top: 15px;
+}
+
+.price-list__secvice-price__table {
+  width: 100%;
+  font-size: 14px;
+  line-height: 24px;
+  border-collapse: collapse;
+  background-color: #f9f6f3;
+}
+
+.price-list__secvice-price__table td {
+  width: 50%;
+  height: 40px;
+  border: 2px solid #000000;
+}
+
+.price-list__secvice-price__table td:nth-child(-n+1) {
+  text-indent: 15px;
+}
+
+.price-list__secvice-price__table td:nth-child(2n) {
+  text-align: center;
+}
+
+.price-list__about-us {
+  margin-bottom: 80px;
+}
+
+.price-list__about-us__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-list__about-us__container p {
+  width: 50%;
+  padding-right: 100px;
+}

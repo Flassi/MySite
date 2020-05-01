@@ -1,25 +1,3 @@
-.shop-navigation > ul {
-  list-style: none;
-  display: flex;
-  font-size: 14px;
-}
-
-.shop-navigation > ul > li:nth-child(n+2) {
-  position: relative;
-  margin-left: 40px;
-}
-
-.shop-navigation > ul > li:nth-child(n+2)::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: -25px;
-  transform: rotate(45deg);
-  width: 10px;
-  height: 10px;
-  background-color: #000000;
-}
-
 .product__photo-and-description {
   margin-top: 60px;
   display: flex;
@@ -80,21 +58,4 @@
 
 .product__description > h3 {
   margin-top: 65px;
-}
-
-.product__composition > li {
-  position: relative;
-  padding-left: 20px;
-  line-height: 24px;
-}
-
-.product__composition > li::before {
-  content: "";
-  position: absolute;
-  top: 7px;
-  left: 0px;
-  transform: rotate(45deg);
-  width: 10px;
-  height: 10px;
-  background-color: #000000;
 }
