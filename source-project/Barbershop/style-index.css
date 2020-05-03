@@ -62,12 +62,10 @@
   width: 50%;
 }
 
-/*
 .news-container {
   overflow-y: scroll;
   height: 218px;
 }
-*/
 
 .news-item {
   margin-bottom: 25px;
@@ -89,6 +87,10 @@
   padding-left: 90px;
   box-shadow: -47px 0px 10px -50px;
   box-sizing: border-box;
+}
+
+.photogallery__zoom {
+  cursor: pointer;
 }
 
 .photogallery__photo {
@@ -160,6 +162,10 @@
   background-color: #f9f6f3;
   border: 2px solid #000101;
   box-sizing: border-box;
+}
+
+.signup__form input:focus {
+  border-color: #663d15;
 }
 
 .signup__form button {

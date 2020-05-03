@@ -102,9 +102,11 @@
 .price-list__about-us__container {
   display: flex;
   justify-content: space-between;
+  flex-flow: wrap;
 }
 
 .price-list__about-us__container p {
   width: 50%;
   padding-right: 100px;
+  box-sizing: border-box;
 }

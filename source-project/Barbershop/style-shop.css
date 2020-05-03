@@ -30,6 +30,15 @@
   padding-bottom: 0px;
 }
 
+.main-aside li > label {
+  cursor: pointer;
+}
+
+.main-aside li > label:hover,
+.main-aside li > label:focus {
+  color: #663d15;
+}
+
 .main-aside input + label::before {
   content: "";
   position: absolute;
@@ -78,6 +87,14 @@
   border-radius: 50%;
 }
 
+.main-aside input:disabled + label {
+  color: #afadab;
+}
+
+.main-aside input:disabled + label::before {
+  border-color: #afadab;
+}
+
 .main-aside button {
   margin-top: 50px;
   border: none;
@@ -95,6 +112,7 @@
 .product-list__container {
   display: flex;
   flex-flow: wrap;
+  width: 720px;
 }
 
 .product-list__item {
@@ -103,6 +121,11 @@
   font-size: 14px;
   width: 220px;
   box-shadow: 0px 0px 10px #cccccc;
+}
+
+.product-list__item:hover,
+.product-list__item:focus {
+  box-shadow: 0px 0px 20px #cccccc;
 }
 
 .product-list__item-image {
@@ -149,4 +172,9 @@
 
 .page-navigation ul > li a {
   min-width: 45px;
+}
+
+.page-navigation .main-button.active {
+  background-color: #ffffff;
+  color: #000000;
 }
