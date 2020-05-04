@@ -308,7 +308,6 @@ p > a {
   cursor: pointer;
 }
 
-.modal-login .close-login-button:hover::before,
 .modal-login .close-login-button:focus::before {
   border: 2px solid #3399cc;
   border-radius: 10%;
@@ -404,7 +403,6 @@ p > a {
   cursor: pointer;
 }
 
-#save-me:hover::before,
 #save-me:focus::before {
   border: 2px solid #3399cc;
   border-radius: 10%;
@@ -425,6 +423,7 @@ p > a {
   margin-top: 6px;
   display: flex;
   justify-content: space-between;
+  white-space: nowrap;
 }
 
 .modal-login__container button {
@@ -461,7 +460,6 @@ p > a {
   cursor: pointer;
 }
 
-.map .close-map-button:hover::before,
 .map .close-map-button:focus::before {
   border: 2px solid #3399cc;
   border-radius: 10%;
